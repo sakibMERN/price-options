@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 
 const Link = ({route}) => {
-    const {id,path, name} = route;
+    const {path, name} = route;
     
   return (
     <li>
@@ -13,7 +13,7 @@ const Link = ({route}) => {
 }
 
 Link.propTypes = {
-    route: PropTypes.array.isRequired
+    route: PropTypes.object.isRequired
 }
 
 export default Link
