@@ -1,15 +1,13 @@
 import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+
 
 function App() {
   return (
     <>
+      <NavBar></NavBar>
       <h1 className="text-center text-7xl">This is tailwind</h1>
-      <div className="badge">default</div>
-      <div className="badge badge-neutral">neutral</div>
-      <div className="badge badge-primary">primary</div>
-      <div className="badge badge-secondary">secondary</div>
-      <div className="badge badge-accent">accent</div>
-      <div className="badge badge-ghost">ghost</div>
+      
     </>
   );
 }
