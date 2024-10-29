@@ -16,7 +16,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav>
+    <nav className="bg-yellow-200 text-black px-6">
       <div onClick={() => setOpen(!open)}>
         {
             open ? <GrClose className="text-4xl md:hidden" />: <RiMenuFold2Line className="text-4xl md:hidden"></RiMenuFold2Line>
@@ -24,7 +24,7 @@ const NavBar = () => {
         
       </div>
 
-      <ul className="md:flex md:gap-5 justify-end">
+      <ul className={`md:flex md:gap-5 justify-end sm:absolute md:static bg-yellow-200 text-black ${open? "top-12":"-top-60"} p-5 duration-1000`}>
         {routes.map((route) => (
           <Link key={routes.id} route={route}></Link>
         ))}
