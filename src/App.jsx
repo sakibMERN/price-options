@@ -1,6 +1,9 @@
 import "./App.css";
+import AreaChart from "./components/AreaChart/AreaChart";
 import DaisyNav from "./components/DaisyNav/DaisyNav";
+import LineChart from "./components/LineChart/LineChart";
 import NavBar from "./components/NavBar/NavBar";
+import PriceOptions from "./components/PriceOptions/PriceOptions";
 
 
 function App() {
@@ -9,7 +12,10 @@ function App() {
       
       <NavBar></NavBar>
       <DaisyNav></DaisyNav>
-      <h1 className="text-center text-7xl">This is tailwind</h1>
+      
+      <PriceOptions></PriceOptions>
+      <LineChart></LineChart>
+      <AreaChart></AreaChart>
       
     </>
   );
